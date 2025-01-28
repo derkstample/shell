@@ -8,10 +8,10 @@ A **C implementation** of a mini Linux shell, inspired by `bash`. `Makefile` inc
 - prints cwd for each new command
 - parses input as tokens, executing tokens using forked threads and execvp
 - cd
-- "<"/">" operators (IO redirection)
+- `<` and `>` operators (IO redirection)
 - history with 100 (configurable) entries
-- "!" operator (history recall)
-- "&" operator (background execution)
+- `!` operator (history recall)
+- `&` operator (background execution)
 - automatic reaping of zombie processes.
 
 ---
@@ -26,5 +26,5 @@ A **C implementation** of a mini Linux shell, inspired by `bash`. `Makefile` inc
 ## Tests
 Run `make tests` to create testing programs for the shell.
 Tests included:
-- waitTest and smallerWaitTest: simply wait 10 and 5 seconds (respectively), then print a line to cout, useful for verifying background execution works as expected.
-- redirTest: read a line and print it back out, useful for verifying IO redirection works as expected.
+- `waitTest` and `smallerWaitTest`: simply wait 10 and 5 seconds (respectively), then print a line to cout, useful for verifying background execution works as expected.
+- `redirTest`: read a line and print it back out, useful for verifying IO redirection works as expected.
